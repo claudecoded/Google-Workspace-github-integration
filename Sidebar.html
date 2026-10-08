@@ -1,0 +1,27 @@
+# GitHub Integration for Google Workspace
+
+A production-ready Google Apps Script project providing complete integration of GitHub across the Google Workspace ecosystem (Docs, Sheets, Slides, Forms, Vids, Gemini Extensions, and Drive).
+
+## Project Architecture & File Mapping
+
+1. `Code.gs` - Contains the logic execution routines, OAuth integrations, payloads formatting, dynamic content context evaluation, and API interfaces.
+2. `Sidebar.html` - The modern interactive Sidebar UI overlay built using CSS and asynchronous client-to-server callbacks (`google.script.run`).
+3. `appsscript.json` - Complete Manifest file explicitly declarations needed scope authorization variables.
+
+## Deployment Instructions
+
+### Method A: Manual App Script Injection
+1. Open any Google Workspace container document (e.g., Google Sheet, Doc, or Slide).
+2. Click on **Extensions** -> **Apps Script**.
+3. Replace the default snippet contents of `Code.gs` with the enclosed production logic.
+4. Create a new HTML file named `Sidebar.html` and inject the sidebar structural mockup.
+5. Go to Project Settings and add standard **Script Properties**:
+   - `GITHUB_TOKEN`: Your GitHub personal access token (classic or fine-grained) with `repo` scopes.
+   - `GITHUB_REPO`: Your repository path (`username/repository-name`).
+   - `GITHUB_BRANCH`: Target tracking branch (`main` or `master`).
+
+### Method B: Google Workspace Add-on Global Deployment
+To make this globally available across **Google Gemini, Google Vids, Gmail, and Chat**:
+1. Enable the Google Apps Script API in your Google account setting dashboard.
+2. Utilize `clasp` (Chrome V8 Google Command Line Tool) to push this codebase into a standalone Add-on script container.
+3. Configure the Deployment Manifest JSON `appsscript.json` to include specialized `addOns` definitions targeting Drive API and Gmail context hooks.
