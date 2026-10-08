@@ -1,0 +1,19 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "webapp": {
+    "executeAs": "USER_ACCESSING",
+    "access": "ANYONE"
+  },
+  "oauthScopes": [
+    "https://googleapis.com",
+    "https://googleapis.com",
+    "https://googleapis.com",
+    "https://googleapis.com",
+    "https://googleapis.com",
+    "https://googleapis.com",
+    "https://googleapis.com"
+  ]
+}
