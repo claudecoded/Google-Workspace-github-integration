@@ -1,3 +1,5 @@
+<img width="1600" height="656" alt="image" src="https://github.com/user-attachments/assets/88e5bf29-8925-46b9-a229-7b11e16d76c1" />
+
 # GitHub Integration for Google Workspace (Docs, Sheets, Slides, Vids, Gemini)
 
 This enterprise-grade open-source integration merges GitHub management pipelines straight into the Google Workspace interface ecosystem. Authors, reviewers, and engineering teams can commit tracking code, serialize workspace files into raw file system branches, and synchronize repository lifecycle loops.
