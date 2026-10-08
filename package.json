@@ -1,0 +1,14 @@
+{
+  "name": "github-workspace-integration-bridge",
+  "version": "1.0.0",
+  "description": "Production middleware for routing Workspace and Gemini Extension bindings into GitHub Ecosystem",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "googleapis": "^126.0.0"
+  }
+}
